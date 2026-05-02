@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Puzzle AI Close Prompt Library</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero-section">
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-icon">⚡</span>
+        <span class="hero-badge-text">AI CLOSE PROMPT LIBRARY</span>
+      </div>
+
+      <h1 class="hero-title">
+        Prompts that do the work.<br />
+        <span class="hero-title-accent">You do the thinking.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        29 production-ready prompts for accounting firms. Copy, paste, and
+        run inside Puzzle AI Close — your client's data is already connected.
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">29</span>
+          <span class="hero-stat-label">Total Prompts</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">17</span>
+          <span class="hero-stat-label">Accounting</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">12</span>
+          <span class="hero-stat-label">Insights &amp; Advisory</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FILTER BAR
+       ============================================ -->
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="All">All <span class="filter-count">29</span></button>
+        <button class="filter-tab" data-filter="Accounting">Accounting <span class="filter-count">17</span></button>
+        <button class="filter-tab" data-filter="Insights">Insights <span class="filter-count">12</span></button>
+      </div>
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" class="search-input" placeholder="Search prompts..." id="searchInput" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       PROMPTS GRID — fully visible, no overlay
+       ============================================ -->
+  <div class="prompts-section">
+    <p class="prompts-count" id="promptsCount">Showing 29 prompts</p>
+    <div class="prompts-grid" id="promptsGrid"></div>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Puzzle</span>
+      <span class="footer-text">AI Close Prompt Library</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
